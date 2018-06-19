@@ -1,0 +1,23 @@
+{
+  "name": "flexboxproject",
+  "version": "1.0.0",
+  "description": "My first Flexbox project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borkeszmate/FlexboxProject.git"
+  },
+  "keywords": [
+    "CSS",
+    "Flexbox"
+  ],
+  "author": "Mate Borkesz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/borkeszmate/FlexboxProject/issues"
+  },
+  "homepage": "https://github.com/borkeszmate/FlexboxProject#readme"
+}
