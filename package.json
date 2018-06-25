@@ -4,7 +4,7 @@
   "description": "My first Flexbox project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass" : "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/borkeszmate/FlexboxProject/issues"
   },
-  "homepage": "https://github.com/borkeszmate/FlexboxProject#readme"
+  "homepage": "https://github.com/borkeszmate/FlexboxProject#readme",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
 }
