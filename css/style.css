@@ -36,23 +36,49 @@ html {
     height: 7rem; }
 
 .search-bar {
-  background-color: #0074D9;
   font-family: inherit;
   font-size: inherit;
   padding: 2rem;
   flex: 0 0 40%; }
-  .search-bar form input {
-    font-family: inherit;
-    width: 80%;
-    background-color: #f7f7f7; }
+  .search-bar form {
+    text-align: center;
+    position: relative; }
+    .search-bar form input {
+      font-family: inherit;
+      width: 80%;
+      background-color: #D3D3D3;
+      border-radius: 20px;
+      transition: all .5s;
+      padding-left: 2rem;
+      color: rgba(0, 0, 0, 0.823);
+      border: none;
+      padding: .5rem 1rem; }
+    .search-bar form .search-button {
+      display: inline-block; }
+      .search-bar form .search-button i {
+        position: relative;
+        right: 3rem;
+        font-size: 1.3rem;
+        text-decoration: none; }
+    .search-bar form ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */ }
+    .search-bar form input:focus {
+      width: 95%;
+      transition: all .5s;
+      outline: none; }
 
 .icons {
   display: flex;
-  background-color: #01FF70;
   margin-right: 5rem; }
   .icons i {
     font-size: 3rem;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    color: #888888;
+    transition: all .3s; }
+  .icons i:hover {
+    font-size: 3.5rem;
+    transition: all .3s;
+    color: #B0B0B0; }
 
 .content {
   display: flex; }
