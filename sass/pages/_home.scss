@@ -161,4 +161,21 @@
 .main-area{
  flex: 1;
  background-color: orangered;
+
+}
+
+.images-section{
+  &__container{
+    display: flex;
+    justify-items: stretch; 
+    flex-direction: row;
+    height: 10rem;
+  }
+  &__image{
+    // width: 30rem;
+    img{
+      width: 100%;
+    }
+  }
+
 }

@@ -11,8 +11,7 @@ body {
 
 html {
   font-size: 62.5%;
-  background-image: linear-gradient(to right bottom, #0074D9, #001f3f);
-  height: 100vh; }
+  background-image: linear-gradient(to right bottom, #0074D9, #001f3f); }
 
 .container {
   max-width: 130rem;
@@ -125,3 +124,12 @@ html {
 .main-area {
   flex: 1;
   background-color: orangered; }
+
+.images-section__container {
+  display: flex;
+  justify-items: stretch;
+  flex-direction: row;
+  height: 10rem; }
+
+.images-section__image img {
+  width: 100%; }
