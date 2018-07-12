@@ -235,8 +235,46 @@
         span{
           font-size: 3rem;
         }
-
-
       
     }
   }
+
+.main-content{
+  margin: 3rem 8rem;
+  display: flex;
+  
+  
+}
+.left-content-box{
+  
+  flex: 0 0 60%;
+  background-color: $color-white-snow;
+  box-shadow: 5px 10px 30px rgba($color: #B0B0B0, $alpha: 0.5);
+  padding: 2rem 2rem;
+
+  
+
+}
+
+.right-content-box{
+  
+  display: flex;
+  
+  margin: 0rem 3rem;
+  flex-direction: column;
+  // padding: 2rem 0rem;
+  &__boxes{
+    padding: 2rem 2rem;
+    background-color: $color-white-snow;
+    box-shadow: 5px 10px 30px rgba($color: #B0B0B0, $alpha: 0.5);
+    align-items: center;
+  }
+  &__boxes:not(:last-child){
+    margin-bottom: 2rem;
+
+   }
+
+   
+
+
+}

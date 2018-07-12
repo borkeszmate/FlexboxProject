@@ -176,3 +176,25 @@ html {
       font-size: 1rem; }
     .rating-section__rate span {
       font-size: 3rem; }
+
+.main-content {
+  margin: 3rem 8rem;
+  display: flex; }
+
+.left-content-box {
+  flex: 0 0 60%;
+  background-color: #F5F5F5;
+  box-shadow: 5px 10px 30px rgba(176, 176, 176, 0.5);
+  padding: 2rem 2rem; }
+
+.right-content-box {
+  display: flex;
+  margin: 0rem 3rem;
+  flex-direction: column; }
+  .right-content-box__boxes {
+    padding: 2rem 2rem;
+    background-color: #F5F5F5;
+    box-shadow: 5px 10px 30px rgba(176, 176, 176, 0.5);
+    align-items: center; }
+  .right-content-box__boxes:not(:last-child) {
+    margin-bottom: 2rem; }
