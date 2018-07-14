@@ -204,6 +204,22 @@ html {
           font-size: 1.3rem;
           text-align: center; }
 
+.users-rated {
+  display: flex; }
+  .users-rated__text-container {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem; }
+  .users-rated__images-container {
+    display: flex; }
+    .users-rated__images-container__img-box {
+      width: 6rem;
+      margin-right: -2rem; }
+      .users-rated__images-container__img-box img {
+        width: 100%;
+        border-radius: 100%;
+        border: .4rem solid white; }
+
 .right-content-box {
   display: flex;
   margin: 0rem 3rem;

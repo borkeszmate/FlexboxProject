@@ -161,6 +161,8 @@
   }
 }
 
+
+
 .main-area{
  flex: 1;
  
@@ -291,6 +293,33 @@
 
   }
 }
+
+// Users rated
+.users-rated{
+  display: flex;
+
+  &__text-container{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  &__images-container{
+    display: flex;
+
+    &__img-box{
+      width: 6rem;
+      margin-right: -2rem;
+      img{
+        width: 100%;
+        border-radius: 100%;
+        border: .4rem solid white;
+      }
+    }
+  }
+}
+
+
+// Right part of the main section
 
 .right-content-box{
   
