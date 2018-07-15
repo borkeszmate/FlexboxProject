@@ -254,6 +254,24 @@
   box-shadow: 5px 10px 30px rgba($color: #B0B0B0, $alpha: 0.5);
   padding: 2rem 2rem;
 
+  h3{
+    font-size: 2rem;
+  }
+
+  p{
+    margin: 1.5rem 0;
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  &__hr{
+    display: flex;
+    justify-content: center;
+    hr{
+      width: 80%;
+      opacity: .6;
+    }
+  }
+
   &__features{
 
     display: flex;
@@ -341,12 +359,61 @@
 
   &__boxes{
   
+  display: flex;
+  flex-direction: column;
   margin: 1rem 0;
 
     &__items{
-      margin: 1.5rem 0;
-      background-color: gray;
+      // margin: 1.5rem 0;
+      // background-color: $color-lime-1;
       list-style-type: none;
+      p{
+        font-size: 1.2rem;
+        text-align: justify;
+      }
+
+      &__user-rating{
+        margin: 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        // background-color: #B0B0B0;
+        &__img-container{
+          width: 8rem;
+
+          img{
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        &__name{
+          display: flex;
+          align-items: center;
+          text-align: center;
+          padding: 0 1rem;
+          font-size: 1.1rem;
+          // background-color: blue;
+
+          h4{
+            font-size: 1.2rem;
+            color: inherit;
+          }
+        }
+
+        &__number{
+          display: flex;
+          align-items: center;
+          text-align: center;
+          padding: 0 1rem;
+          font-size: 1.1rem;
+          // background-color: green;
+          h4{
+            color: $color-red-primary;
+            // font-weight: bold;
+            font-size: 3rem;
+          }
+        }
+      }
+      
 
       &__container{
         display: flex;

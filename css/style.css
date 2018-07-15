@@ -185,6 +185,18 @@ html {
   background-color: #F5F5F5;
   box-shadow: 5px 10px 30px rgba(176, 176, 176, 0.5);
   padding: 2rem 2rem; }
+  .left-content-box h3 {
+    font-size: 2rem; }
+  .left-content-box p {
+    margin: 1.5rem 0;
+    font-size: 1.4rem;
+    text-align: justify; }
+  .left-content-box__hr {
+    display: flex;
+    justify-content: center; }
+    .left-content-box__hr hr {
+      width: 80%;
+      opacity: .6; }
   .left-content-box__features {
     display: flex;
     justify-content: space-around; }
@@ -232,11 +244,41 @@ html {
   .right-content-box__boxes:not(:last-child) {
     margin-bottom: 2rem; }
   .right-content-box__boxes {
+    display: flex;
+    flex-direction: column;
     margin: 1rem 0; }
     .right-content-box__boxes__items {
-      margin: 1.5rem 0;
-      background-color: gray;
       list-style-type: none; }
+      .right-content-box__boxes__items p {
+        font-size: 1.2rem;
+        text-align: justify; }
+      .right-content-box__boxes__items__user-rating {
+        margin: 1rem 1rem;
+        display: flex;
+        justify-content: space-between; }
+        .right-content-box__boxes__items__user-rating__img-container {
+          width: 8rem; }
+          .right-content-box__boxes__items__user-rating__img-container img {
+            width: 100%;
+            border-radius: 50%; }
+        .right-content-box__boxes__items__user-rating__name {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          padding: 0 1rem;
+          font-size: 1.1rem; }
+          .right-content-box__boxes__items__user-rating__name h4 {
+            font-size: 1.2rem;
+            color: inherit; }
+        .right-content-box__boxes__items__user-rating__number {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          padding: 0 1rem;
+          font-size: 1.1rem; }
+          .right-content-box__boxes__items__user-rating__number h4 {
+            color: #FF4136;
+            font-size: 3rem; }
       .right-content-box__boxes__items__container {
         display: flex;
         align-items: center; }
