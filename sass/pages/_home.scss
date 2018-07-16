@@ -9,21 +9,32 @@
  border-radius: 1%;
  overflow: hidden;
 
+ @media only screen and (max-width:50em) {
+  
+   margin: 0 0;
+   border-radius: 0%;
+ }
+
 }
 
 .header{
  background-color: white;
  width: 100%;
  height: 100%;
+
 }
 
 .head-area{
- display: flex;
- justify-content: space-between;
- align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 
  img{
   height: 10rem;
+  
+
+
  }
 
 }
@@ -34,6 +45,13 @@
  font-size: inherit;
  padding: 2rem;
  flex: 0 0 40%;
+
+ @media only screen and (max-width:50em) {
+   display:none;
+
+ }
+   
+
  
  form{
   text-align: center;
@@ -76,17 +94,22 @@
  }
 }
 
+
+
 .icons{
  
  display: flex;
- 
  margin-right: 5rem;
+
+
  
  i{
   font-size: 3rem;
   margin: 0 1rem;
   color:$color-gray-4;
   transition: all .3s;
+  
+
  }
  i:hover{
   font-size: 3.5rem;
@@ -99,6 +122,9 @@
 .content{
 
  display: flex;
+   @media only screen and (max-width:50em){
+    display: block;
+  }
 
 }
 
@@ -110,18 +136,41 @@
  background-color: $color-dark-slate;
  display: flex;
  flex-direction: column;
- justify-content: space-between; 
+ justify-content: space-between;
+  display: flex;
+
+
+   
 }
 
 .navigation-container{
   
     padding: 2rem 0rem;    
+    
+    @media only screen and (max-width:50em){
+    padding: .5rem 0rem;
+   }
 }
 .navigation{
+
+  @media only screen and (max-width:50em){
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: .5rem 2rem;
+    
+
+   }
   &__item{
 
     list-style-type: none;
     padding: 1.5rem 2rem;
+  
+    @media only screen and (max-width:50em){
+    padding: .3rem 2rem;
+   }
+   
+
     
 
 
@@ -154,6 +203,9 @@
 .copywrite{
   text-align: center;
   margin-bottom: 2rem;
+  @media only screen and (max-width:50em){
+    display: none;
+  }
   p{
     color: $color-red-primary;
     font-size: 1.6rem;
@@ -189,6 +241,14 @@
     height: 8rem;
     margin-top: -.25rem;
 
+    @media only screen and (max-width:60rem) {
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+
+    }
+
+
     &__name{
       
       text-transform: uppercase;
@@ -205,6 +265,14 @@
       margin-right: auto;
       font-size: 2.5rem;
       color: $color-red-primary;  
+ @media only screen and (max-width:60rem) {
+    margin: 0 0;
+    padding: 5rem 0;
+
+    }
+
+      
+
     }
 
     &__location{
@@ -215,11 +283,16 @@
       font-style: italic;
       padding: 0 2rem;
       color: $color-dark-slate;
-     
+     @media only screen and (max-width:50em) {
+      font-size: 1.2rem;
+      flex-direction: column;
+      justify-content: center;
+      }
       i{
         padding: 0 1rem;
         font-size: 3rem;
         color: $color-red-primary;
+        
       }
     }
 
@@ -245,6 +318,10 @@
   margin: 3rem 8rem;
   display: flex;
   
+  @media only screen and (max-width:50em) {
+    flex-direction: column;
+    margin: 20rem .4rem;
+  }
   
 }
 .left-content-box{
@@ -424,3 +501,19 @@
   }
 
 }
+
+.mobile-footer{
+  display: none;
+  text-align: center;
+  background-color: $color-dark-slate;
+  padding: 2rem 0;
+  @media only screen and (max-width:50em){
+    display: block;
+  }
+  p{
+    color: $color-red-primary;
+    font-size: 1.6rem;
+
+  }
+}
+

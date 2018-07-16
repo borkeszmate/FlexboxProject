@@ -10,6 +10,10 @@ body{
  padding:3rem;
  overflow-x: hidden;
  font-family: 'Open Sans', sans-serif;
+
+ @media only screen and (max-width:50em) {
+  padding: 0 0;
+ }
 }
 
 html{
