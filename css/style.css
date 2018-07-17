@@ -171,7 +171,9 @@ html {
   margin-top: -.25rem; }
   @media only screen and (max-width: 60rem) {
     .rating-section {
-      flex-direction: column; } }
+      flex-direction: column;
+      border: none;
+      padding: 1rem 0; } }
   .rating-section__name {
     text-transform: uppercase;
     color: #FF4136;
@@ -186,7 +188,7 @@ html {
     @media only screen and (max-width: 60rem) {
       .rating-section__stars {
         margin: 0 0;
-        padding: 5rem 0; } }
+        padding: 1rem 0; } }
   .rating-section__location {
     display: flex;
     align-items: center;
@@ -195,8 +197,9 @@ html {
     font-style: italic;
     padding: 0 2rem;
     color: #1d1e22; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 60em) {
       .rating-section__location {
+        padding: 3rem 0;
         font-size: 1.2rem;
         flex-direction: column;
         justify-content: center; } }
@@ -213,6 +216,10 @@ html {
     background-color: #FF4136;
     color: white;
     padding: 1rem; }
+    @media only screen and (max-width: 60em) {
+      .rating-section__rate {
+        padding: 3rem 0;
+        margin: 1rem 0; } }
     .rating-section__rate p {
       font-size: 1rem; }
     .rating-section__rate span {
@@ -221,10 +228,10 @@ html {
 .main-content {
   margin: 3rem 8rem;
   display: flex; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 65em) {
     .main-content {
       flex-direction: column;
-      margin: 20rem .4rem; } }
+      margin: 16rem 0 0 0; } }
 
 .left-content-box {
   flex: 0 0 60%;
@@ -282,6 +289,9 @@ html {
   display: flex;
   margin: 0rem 3rem;
   flex-direction: column; }
+  @media only screen and (max-width: 60rem) {
+    .right-content-box {
+      margin: 0 0; } }
   .right-content-box__boxes {
     padding: 2rem 2rem;
     background-color: #F5F5F5;
